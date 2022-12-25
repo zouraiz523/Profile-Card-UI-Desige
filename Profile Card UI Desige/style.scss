@@ -1,0 +1,145 @@
+@import url(https://allfont.net/allfont.css?fonts=comic-sans-ms);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(-30deg, #dc143c 10%, #28223f 50%);
+}
+
+.container
+{
+    user-select: none;
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    background: #231e39;
+    color: #d3d8fd;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px -10px rgba($color: #000000, $alpha: 0.75);
+
+    .cover-photo
+    {
+        background: url(laptop-takeaway-coffee-car-s-hood-with-beautiful-natu.jpg);
+        background-size: contain;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+        position: relative;
+
+        .profile
+        {
+            position: absolute;
+            left: 20%;
+            bottom: -30%;
+            transform: translate(-50%);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            padding: 5px;
+            border: 1px solid #000;
+            background: #292343;
+            object-fit: cover;
+            object-position: top center;
+            cursor: pointer;
+            transition: 0.2s linear;
+
+            &:hover
+            {
+                border: 4px solid #03bfbc;
+            }
+        }
+    }
+
+    .profile-name
+    {
+        position: relative;
+        left: 15%;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 15px 0 0;
+    }
+    .profile-details
+    {
+        margin: 20px 0 15px;
+
+        .skill
+        {
+            font-family: "Calibri",sans-serif;
+            font-weight: 400;
+            font-size: 1.05rem;
+        }
+        .button-container
+        {
+            width: 100%;
+            margin: 5px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button
+            {
+                margin: 5px;
+
+                &.msg-btn,
+                &.fol-btn
+                {
+                    background: transparent;
+                    color: #02b9bc;
+                    border: 1.5px solid #03bfbc;
+                    outline: none;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    font-family: "Calibri",sans-serif;
+                    font-size: 1.40rem;
+                    cursor: pointer;
+
+                    &:hover
+                    {
+                        background: #03bfbc;
+                        color: #231e39;
+                        border-color: #fff;
+                        transition: 0.3s linear;
+                    }
+                }
+            }
+        }
+        .icons
+        {
+            position: relative;
+            margin: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li
+            {
+                list-style: none;
+                width: 40px;
+                height: 40px;
+                line-height: 38px;
+                border: 10px solid transparent;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                transition: 0.3s linear;
+                cursor: pointer;
+
+                &:hover
+                {
+                    color: #03bfbc;
+                    border: 1px solid #03bfbc;
+                }
+            }
+        }
+    }
+}

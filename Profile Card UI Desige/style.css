@@ -1,0 +1,124 @@
+@import url(https://allfont.net/allfont.css?fonts=comic-sans-ms);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Sans MS", sans-serif;
+  background: linear-gradient(-30deg, #dc143c 10%, #28223f 50%);
+}
+
+.container {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  position: relative;
+  width: 350px;
+  background: #231e39;
+  color: #d3d8fd;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+.container .cover-photo {
+  background: url(laptop-takeaway-coffee-car-s-hood-with-beautiful-natu.jpg);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.container .cover-photo .profile {
+  position: absolute;
+  left: 20%;
+  bottom: -30%;
+  transform: translate(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #000;
+  background: #292343;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.container .cover-photo .profile:hover {
+  border: 4px solid #03bfbc;
+}
+.container .profile-name {
+  position: relative;
+  left: 15%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 15px 0 0;
+}
+.container .profile-details {
+  margin: 20px 0 15px;
+}
+.container .profile-details .skill {
+  font-family: "Calibri", sans-serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+}
+.container .profile-details .button-container {
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .profile-details .button-container button {
+  margin: 5px;
+}
+.container .profile-details .button-container button.msg-btn, .container .profile-details .button-container button.fol-btn {
+  background: transparent;
+  color: #02b9bc;
+  border: 1.5px solid #03bfbc;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-family: "Calibri", sans-serif;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.container .profile-details .button-container button.msg-btn:hover, .container .profile-details .button-container button.fol-btn:hover {
+  background: #03bfbc;
+  color: #231e39;
+  border-color: #fff;
+  transition: 0.3s linear;
+}
+.container .profile-details .icons {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .profile-details .icons li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  border: 10px solid transparent;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.container .profile-details .icons li:hover {
+  color: #03bfbc;
+  border: 1px solid #03bfbc;
+}/*# sourceMappingURL=style.css.map */
